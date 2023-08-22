@@ -1,0 +1,270 @@
+:root{
+  --color-background: #1f2136;
+  --color-primary: #23253a;
+  --color-secondary: #000e5a;
+  --color-red: #f82642;
+  --color-grey60: #343435;
+  --color-white: #ffffff;
+  font-family: sans-serif;
+  font-size: 60%;
+}
+/* 
+16-08-2023
+id = #
+class = . 
+display flex = um do lado do outro*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+
+header{
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+header div h1{
+  color: var(--color-white);
+}
+
+header nav ul{
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li a{
+  color: var(--color-white);
+  text-decoration: none;
+  margin-left: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.content{
+  background-color: var(--color-primary);
+  padding-left: 20%;
+  padding-right:20%;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.image img{
+  height:25rem;
+  
+}
+
+.info{
+  max-width: 30rem;
+}
+.contacts{
+  display: flex;
+}
+
+.contacts_link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  border: 1px solid var(--color-red);
+  font-weight: bold;
+  color: var(--color-white) ;
+  min-height: 2rem;
+  min-width: 2rem;
+  border-radius: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.info h2{
+  font-weight: bold;
+  color: var(--color-white);
+  margin-top: 1rem;
+}
+
+.info h3{
+  font-weight: lighter;
+  font-size: 1rem;
+  color: var(--color-white);
+  margin-top: 1rem;
+}
+
+#skills{
+  background-color: var(--color-background);
+  color: var(--color-white);
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.section_header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.section_header p{
+  max-width: 35rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.divider{
+  width: 10rem;
+  height: 3px;
+  background-color: var(--color-red);
+  margin-top: 1rem;
+}
+
+.skills{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-bottom: 5rem;
+  
+}
+
+.skill{
+  background-color: var(--color-primary);
+  padding-left: 1rem;
+  padding-right: 1rem; 
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.icon i{
+  color: var(--color-red);
+  padding-bottom: 1rem;
+}
+
+.skill p{
+  margin-top: 1rem;
+}
+
+.skill h2{
+  font-size: 1rem;
+}
+
+#experiences{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 5rem;
+}
+
+.experience h2{
+  font-size: 1rem;
+}
+
+.experience p{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.experiences{
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.experience{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem; 
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  min-width: 20rem;
+}
+
+#certifications{
+  background-color: var(--color-background);
+  color: var(--color-white);
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 5rem;
+}
+
+.certifications::-webkit-scrollbar, .experiences::-webkit-scrollbar{
+  height:0.5rem;
+}
+
+.certifications::-webkit-scrollbar-track, .experiences::-webkit-scrollbar-track{
+  background-color:inherit;
+}
+
+.certifications::-webkit-scrollbar-thumb, .experiences::-webkit-scrollbar-thumb{
+  height:1rem;
+  background-color: var(--color-red);
+}
+
+.certifications{
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  align-items: center;
+  overflow-x: scroll; 
+}
+
+.certification_image img{
+  height: 10rem;
+  width: 15rem;
+  
+}
+
+.certification_image{
+  height: 10rem;
+  width: 15rem;
+}
+
+.certification{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certification span{
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.certification_title{
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 3rem;
+}
+
+footer a{
+  color: var(--color-white);
+  padding-top: 0.5rem;
+}
+
+footer  i{
+  color: var(--color-red);
+  padding-right: 1rem;
+}
+
+footer a{
+  text-decoration: none;
+}
