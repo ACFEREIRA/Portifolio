@@ -55,6 +55,26 @@ header nav ul li a{
   transition: border-height 1s;
 }
 
+.button_menu{
+  background-color: var(--color-red);
+  border-radius: 3px;
+  color: var(--color-white);
+  padding: 6px;
+  margin-top: 1rem;
+  border: none;
+}
+
+.menu{
+  background: inherit;
+  border: none;
+  display: none;
+}
+
+.menu i{
+  color: var(--color-red);
+  font-size: 1rem;
+}
+
 .content{
   background-color: var(--color-primary);
   padding-left: 20%;
@@ -280,4 +300,51 @@ footer  i{
 
 footer a{
   text-decoration: none;
+}
+
+@media (max-width: 760px ) {
+  header{
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  header nav{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  .image img{
+    align-items: flex-end;
+    max-width: 12rem;
+    max-height: 12rem;
+  }
+
+  .content, #skills, #experiences, #certifications, footer{
+    padding-left: 10%;
+    padding-right: 10%;
+  } 
+}
+
+@media (max-width: 480px ) { 
+  .content{
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  #skills, #experiences, #certifications, footer{
+    padding-left: 10%;
+    padding-right: 10%;
+ }
+
+ .skills{
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 1rem;
+    gap: 1rem;
+  }
 }
